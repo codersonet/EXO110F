@@ -113,7 +113,7 @@ Top ranked candidates:
 ## 6. How data is stored
 
 ```text
-astronet-lite/
+EXO110F/
   data/                      # gitignored: never commit raw or large data
     raw/
       koi_table.csv          # NASA Exoplanet Archive table (periods, epochs, labels)
