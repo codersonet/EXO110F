@@ -221,3 +221,14 @@ When you publish results, cite the archive and the paper, and credit Lightkurve 
 - **Why split by star:** if views of the same star appear in both training and testing, the score looks better than it really is.
 - **Why not accuracy alone:** with so few planets, a model can be highly "accurate" while missing nearly all of them.
 - **Errors teach the most:** plotting confident false positives and false negatives reveals preprocessing bugs and label problems.
+- **What I learned in Electronics & Communication:**
+| Field | Meaning |
+|---|---|
+| Removing bad points and outliers | Noise removal, outlier clipping |
+| Flattening slow brightness drift | Detrending, which works like high-pass filtering |
+| Normalizing the flux | Signal normalization |
+| Folding on the period | Averaging repeated cycles to lift a weak signal above noise |
+| Binning into global and local views | Resampling and binning to a fixed length |
+| `Conv1D` layers in the CNN | Sliding-window filtering (convolution) with learned coefficients |
+| Faint dip versus noise | SNR, which is the core challenge |
+|---|---|
