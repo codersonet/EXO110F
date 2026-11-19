@@ -213,7 +213,7 @@ When you publish results, cite the archive and the paper, and credit Lightkurve 
 
 ## 12. What I learned
 
-> Edit this section in your own words as you build. Starting points from what you've worked through so far:
+> What I've worked through so far:
 
 - **Detecting vs classifying:** finding a repeating dip is a different job from judging whether that dip looks like a planet.
 - **Candidate vs confirmed:** a high model score is a ranking, not a confirmation. Confirmation needs follow-up observations and expert review.
@@ -221,5 +221,4 @@ When you publish results, cite the archive and the paper, and credit Lightkurve 
 - **Why split by star:** if views of the same star appear in both training and testing, the score looks better than it really is.
 - **Why not accuracy alone:** with so few planets, a model can be highly "accurate" while missing nearly all of them.
 - **Errors teach the most:** plotting confident false positives and false negatives reveals preprocessing bugs and label problems.
-
-*(Add your own: what surprised you, what broke, what you'd do next.)*
+- 
