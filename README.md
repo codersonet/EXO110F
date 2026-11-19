@@ -221,4 +221,3 @@ When you publish results, cite the archive and the paper, and credit Lightkurve 
 - **Why split by star:** if views of the same star appear in both training and testing, the score looks better than it really is.
 - **Why not accuracy alone:** with so few planets, a model can be highly "accurate" while missing nearly all of them.
 - **Errors teach the most:** plotting confident false positives and false negatives reveals preprocessing bugs and label problems.
-- 
