@@ -1,4 +1,7 @@
-# astronet-lite
+### EXO110F
+EXO110f sees when a planet passes in front of its star, the star dims by a tiny fraction. A 1D CNN reads NASA Kepler light curves and learns to tell a real planet's dip from look-alike, like two stars eclipsing each other. This approach to find Kepler-90i, the eighth planet in its system.
+
+---
 
 A small, beginner-friendly, Keras-based exoplanet **candidate classifier**, inspired by Google's AstroNet
 ([Shallue & Vanderburg, arXiv:1712.05044](https://arxiv.org/abs/1712.05044)).
