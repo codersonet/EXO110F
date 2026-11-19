@@ -222,6 +222,7 @@ When you publish results, cite the archive and the paper, and credit Lightkurve 
 - **Why not accuracy alone:** with so few planets, a model can be highly "accurate" while missing nearly all of them.
 - **Errors teach the most:** plotting confident false positives and false negatives reveals preprocessing bugs and label problems.
 - **What I learned in Electronics & Communication:**
+
 | Field | Meaning |
 |---|---|
 | Removing bad points and outliers | Noise removal, outlier clipping |
@@ -231,4 +232,3 @@ When you publish results, cite the archive and the paper, and credit Lightkurve 
 | Binning into global and local views | Resampling and binning to a fixed length |
 | `Conv1D` layers in the CNN | Sliding-window filtering (convolution) with learned coefficients |
 | Faint dip versus noise | SNR, which is the core challenge |
-|---|---|
