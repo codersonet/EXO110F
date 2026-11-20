@@ -1,0 +1,7 @@
+{
+  "version": "v1",
+  "detrend_median_window": 101,
+  "upper_clip_sigma": 4.0,
+  "val_fraction": 0.2,
+  "seed": 42
+}

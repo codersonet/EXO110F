@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-RAW = Path("data/raw")
+RAW = Path(__file__).resolve().parents[2] / "data" / "raw"
 
 def load_split(name):
     """name is 'Train' or 'Test'. Returns flux array X and binary labels y (1 = planet)."""
