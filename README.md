@@ -1,4 +1,4 @@
-# EXO110F
+# EXO110R
 
 A small, beginner-friendly, Keras-based exoplanet **candidate ranker**, inspired by Google's AstroNet
 ([Shallue & Vanderburg, arXiv:1712.05044](https://arxiv.org/abs/1712.05044)).
