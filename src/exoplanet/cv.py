@@ -78,5 +78,7 @@ for m in oof:
     print(f"    best-F1 threshold {thr:.3f}: precision {prec:.3f}, recall {rec:.3f}, F1 {f1:.3f}")
 
 (ROOT / "results").mkdir(exist_ok=True)
+np.savez(ROOT / "results" / "cv_oof.npz",
+         baseline=oof["baseline"].mean(axis=0), cnn=oof["cnn"].mean(axis=0))
 (ROOT / "results" / "cv_results.json").write_text(json.dumps(summary, indent=2))
 print("\nsaved results/cv_results.json")

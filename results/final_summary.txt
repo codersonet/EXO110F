@@ -1,0 +1,29 @@
+Run: seed=42, preprocess_v1, model=cnn
+
+Split (by star):        train    val   test
+  positives (planets)         30      7      5
+  negatives (no planet)     4039   1011    565
+  (the final model was trained on train + val together)
+
+Threshold (chosen by cross-validation, never on test data): 0.698
+
+Test results (locked test file, used for the final exam):
+  Precision 0.667   Recall 0.400   PR-AUC 0.639   ROC-AUC 0.993
+  Confusion matrix: TN=564  FP=1  FN=3  TP=2
+
+Top 10 ranked candidates (held-out test stars):
+   1. exoTest.csv row 4    score 0.868   dataset label: planet     (flagged)
+   2. exoTest.csv row 241  score 0.863   dataset label: non-planet (flagged)
+   3. exoTest.csv row 3    score 0.840   dataset label: planet     (flagged)
+   4. exoTest.csv row 2    score 0.557   dataset label: planet     (below threshold)
+   5. exoTest.csv row 549  score 0.466   dataset label: non-planet (below threshold)
+   6. exoTest.csv row 124  score 0.423   dataset label: non-planet (below threshold)
+   7. exoTest.csv row 96   score 0.371   dataset label: non-planet (below threshold)
+   8. exoTest.csv row 1    score 0.366   dataset label: planet     (below threshold)
+   9. exoTest.csv row 136  score 0.360   dataset label: non-planet (below threshold)
+  10. exoTest.csv row 185  score 0.356   dataset label: non-planet (below threshold)
+
+Notes:
+  - The Kaggle data has no star names (such as KIC numbers), so stars are identified by row number.
+  - Only 5 planets are in the test set, so treat every number as rough.
+  - These are ranked candidates, not discoveries or confirmed planets.

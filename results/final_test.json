@@ -1,0 +1,22 @@
+{
+  "model": "cnn",
+  "threshold_from_cv": 0.6975094676017761,
+  "seed": 42,
+  "epochs": 30,
+  "augment_copies": 0,
+  "test_stars": 570,
+  "test_planets": 5,
+  "pr_auc": 0.6388888888888888,
+  "roc_auc": 0.9932743362831858,
+  "TP": 2,
+  "FP": 1,
+  "FN": 3,
+  "TN": 564,
+  "planets_in_top_k_of_test_list": {
+    "5": 3,
+    "10": 4,
+    "20": 5,
+    "50": 5
+  },
+  "note": "Few test planets: treat every number as rough. Predictions are candidates, not confirmations."
+}

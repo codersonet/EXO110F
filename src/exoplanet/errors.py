@@ -1,8 +1,5 @@
 """Error analysis on out-of-fold (cross-validation) predictions.
-
-Uses only train+validation stars. The locked test file is never touched here.
-Run:  PYTHONPATH=src python -m exoplanet.errors
-"""
+Uses only train+validation stars. The locked test file is never touched here."""
 import json
 
 import matplotlib.pyplot as plt
@@ -10,7 +7,7 @@ import numpy as np
 
 from exoplanet.preprocess import ROOT
 
-MODEL = "cnn"      # "cnn" or "baseline"
+MODEL = "cnn"      # "cnn" or "baseline" but since cnn performed better in 4/5 folds, we will focus on it
 TOP = 6            # how many mistakes of each kind to plot
 
 d = np.load(ROOT / "data" / "processed" / "dataset_v1.npz")
